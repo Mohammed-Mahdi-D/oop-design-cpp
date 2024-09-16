@@ -20,6 +20,28 @@ class Singleton
         return SingletonInst;
         }
 
+        // the getters and setters of the class settings
+        int getsetting1()
+        {
+            return setting1;
+        }
+
+        std::string getsetting2()
+        {
+            return setting2;
+        }
+        
+        void setsetting1(int v)
+        {
+            setting1 = v;
+        }
+
+        void setsetting2(std::string s)
+        {
+            setting2 = s;
+        }
+
+
 };
 
 
