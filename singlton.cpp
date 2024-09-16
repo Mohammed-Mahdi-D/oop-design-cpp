@@ -58,5 +58,12 @@ Singleton* Singleton::SingletonInst = nullptr; // very important initialization
 
 int main()
 {
+// **** example ****
+    // Singleton* i1 = Singleton::getInstance();
+    // i1->setsetting1(69);
+    // i1->setsetting2("hi");
+    // std::cout << i1->getsetting1() << "\n";
+    // std::cout << i1->getsetting2();
+
     return 0;
 }
