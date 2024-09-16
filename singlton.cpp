@@ -11,6 +11,11 @@ class Singleton
         std::string setting2;  // those are just dummy settings
 
     public:
+        // Delete copy constructor and assignment operator
+        Singleton(const Singleton&) = delete;
+        Singleton& operator=(const Singleton&) = delete;
+
+
         static Singleton* getInstance() 
         {
             if (SingletonInst == nullptr) 
