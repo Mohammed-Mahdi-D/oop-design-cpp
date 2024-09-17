@@ -61,5 +61,12 @@ class ObserverChild : public Observer
 
 int main()
 {
+
+    // SubjectChild subject;
+    // ObserverChild observer;
+
+    // subject.subscribe(&observer);
+    // subject.notify();
+    // subject.unsubscribe(&observer);
     return 0;
 }
