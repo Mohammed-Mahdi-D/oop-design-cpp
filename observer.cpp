@@ -49,6 +49,15 @@ class SubjectChild : public Subject
 };
 
 
+class ObserverChild : public Observer
+{
+    void update(float temp, float humidity) override
+    {
+        std::cout << temp << " " << humidity << "\n";
+    }
+};
+
+
 
 int main()
 {
