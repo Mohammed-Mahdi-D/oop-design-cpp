@@ -45,12 +45,16 @@ class Context
 {
     private:
         std::shared_ptr<StateInterface> state;
-        
-    public:
         void changeState(std::shared_ptr<StateInterface> newState)
         {
             state = std::move(newState);
+        }
+        
+    public:
 
+        void transitionTo(std::shared_ptr<StateInterface> newState) {
+            // transition logic here
+            changeState(std::move(newState));
         }
 
 
