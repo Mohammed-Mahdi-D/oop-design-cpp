@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 
 
@@ -39,6 +40,25 @@ class StateC : public StateInterface
         }
 };
 
+
+class Context
+{
+    private:
+        std::shared_ptr<StateInterface> state;
+        
+    public:
+        void changeState(std::shared_ptr<StateInterface> newState)
+        {
+            state = std::move(newState);
+
+        }
+
+
+        void doSomething() 
+        {
+            state->doSomething();
+        }
+};
 
 
 int main()
